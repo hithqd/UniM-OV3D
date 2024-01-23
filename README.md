@@ -13,7 +13,7 @@
 ```
 @article{he2024unim,
   title={UniM-OV3D: Uni-Modality Open-Vocabulary 3D Scene Understanding with Fine-Grained Feature Representation},
-  author={He, qingdong and Peng, jinlong and Jiang, zhengkai and Wu, kai and Ji, xiaozhong and Zhang, jiangning and Wang, yabiao and Wang, chengjie and Chen, mingang and Wu, yunsheng},
+  author={He, Qingdong and Peng, Jinlong and Jiang, Zhengkai and Wu, Kai and Ji, Xiaozhong and Zhang, Jiangning and Wang, Yabiao and Wang, Chengjie and Chen, Mingang and Wu, Yunsheng},
   journal={arXiv preprint arXiv:2401.11395},
   year={2024}
 }
