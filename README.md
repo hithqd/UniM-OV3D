@@ -5,7 +5,7 @@
 <!-- <br> -->
 
 <sup>1</sup>Youtu Lab, Tencent,
-<sup>2</sup>Shanghai Jiao Tong University
+<sup>2</sup>Shanghai Development Center of Computer Software Technology
 
 ![Image description](https://github.com/hithqd/UniM-OV3D/blob/main/docs/framework.png)
 
