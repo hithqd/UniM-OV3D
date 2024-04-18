@@ -5,7 +5,6 @@
 <!-- <br> -->
 
 <sup>1</sup>Youtu Lab, Tencent
-
 <sup>2</sup>Shanghai Development Center of Computer Software Technology
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.05767-b31b1b.svg)](https://arxiv.org/abs/2401.11395)
