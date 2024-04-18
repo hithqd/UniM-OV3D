@@ -4,7 +4,8 @@
 [Qingdong He<sup>1</sup>](https://scholar.google.com/citations?user=gUJWww0AAAAJ&hl=zh-CN), [Jinlong Peng<sup>1</sup>](https://scholar.google.com/citations?user=i5I-cIEAAAAJ&hl=zh-CN), [Zhengkai Jiang<sup>1</sup>](https://scholar.google.com/citations?user=ooBQi6EAAAAJ&hl=zh-CN), [Kai Wu<sup>1</sup>](https://scholar.google.com/citations?hl=zh-CN&user=ElfT3eoAAAAJ), [Xiaozhong Ji<sup>1</sup>](https://scholar.google.com/citations?user=iL2j_yAAAAAJ&hl=zh-CN&oi=ao), [Jiangning Zhang<sup>1</sup>](https://zhangzjn.github.io/), [Yabiao Wang<sup>1</sup>](https://scholar.google.com/citations?hl=zh-CN&user=xiK4nFUAAAAJ), [Chengjie Wang<sup>1</sup>](https://scholar.google.com/citations?hl=zh-CN&user=fqte5H4AAAAJ), [Mingang Chen<sup>2</sup>](https://scholar.google.com/citations?user=FBfC58EAAAAJ&hl=zh-CN&oi=ao), Yunsheng Wu<sup>1</sup>. 
 <!-- <br> -->
 
-<sup>1</sup>Youtu Lab, Tencent,
+<sup>1</sup>Youtu Lab, Tencent
+
 <sup>2</sup>Shanghai Development Center of Computer Software Technology
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.05767-b31b1b.svg)](https://arxiv.org/abs/2401.11395)
