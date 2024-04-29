@@ -21,7 +21,7 @@
 @article{he2024unim,
   title={UniM-OV3D: Uni-Modality Open-Vocabulary 3D Scene Understanding with Fine-Grained Feature Representation},
   author={He, Qingdong and Peng, Jinlong and Jiang, Zhengkai and Wu, Kai and Ji, Xiaozhong and Zhang, Jiangning and Wang, Yabiao and Wang, Chengjie and Chen, Mingang and Wu, Yunsheng},
-  journal={33th International Joint Conference on Artificial Intelligence (IJCAI)},
+  journal={33rd International Joint Conference on Artificial Intelligence (IJCAI)},
   year={2024}
 }
 ```
