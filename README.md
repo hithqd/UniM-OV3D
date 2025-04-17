@@ -94,6 +94,28 @@ The dataset configs are located within [tools/cfgs/dataset_configs](../tools/cfg
     ├── tools
     ```
 
+#### nuScenes Dataset
+* Please download the official [NuScenes 3D object detection dataset](https://www.nuscenes.org/download) and organize the downloaded files as follows: 
+* Additionally, please download the caption data [here](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/jhyang13_connect_hku_hk/Eh9qCTiV0VBEuJDLRai7_MUBGOepuHr3F9y-VVnIjhyELw?e=a4yXcB).
+```
+PLA
+├── data
+│   ├── nuscenes
+│   │   │── text_embed
+│   │   │── v1.0-trainval (or v1.0-mini if you use mini)
+│   │   │   │── samples
+│   │   │   │── sweeps
+│   │   │   │── maps
+│   │   │   │── caption_idx
+│   │   │   │── v1.0-trainval
+├── pcseg
+├── tools
+```
+
+* Install the `nuscenes-devkit` with version `1.0.5` by running the following command: 
+```shell script
+pip install nuscenes-devkit==1.0.5
+```
 
 # Citation
 ```
