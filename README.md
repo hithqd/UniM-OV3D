@@ -133,6 +133,15 @@ pip install nuscenes-devkit==1.0.5
     | nuScenes | [B10/N5](../tools/cfgs/nuscenes_models/sparseunet_clip_base10_caption.yaml) |  [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EW3r1oYwaERDk7BE2v9mp4MB0JOBkYMPKWYIWNkbl_EWGQ?e=cHb1g0) |
     
 
+| Dataset | Partition | hIoU / mIoU(B) / mIoU(N) | Path |
+    |:---:|:---:|:---:|:---:|
+    | ScanNet | [B15/N4](../tools/cfgs/scannet_models/spconv_clip_base15_caption.yaml) | 69.4 / 68.2 / 70.7 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EWGG39VOw2NOvKdfUjWnh8UBPgU6zBilXLaKGMgO2asBYw?e=g7QCpC) |
+    | ScanNet | [B12/N7](../tools/cfgs/scannet_models/spconv_clip_base12_caption.yaml) | 68.2 / 69.9 / 66.6 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EfJpjpul0cBAhHhV3oKm6JkB0UcTUf7TnaLWDgwWkFFGxg?e=OT0wsu) |
+    | ScanNet | [B10/N9](../tools/cfgs/scannet_models/spconv_clip_base10_caption.yaml) | 64.3 / 76.3 / 55.6 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EZG4gIqTA2lHpephZLXG8tsBQjA-m5e0HXK_ykjaNK_saQ?e=s6q2Dk) |
+    | nuScenes | [B12/N3](../tools/cfgs/nuscenes_models/sparseunet_clip_base12_caption.yaml) |  64.4 / 75.8 / 56.0 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/Ef7cm0XNBjZHupbpYvg9ItkBC8WaB25Ar0kiOTdg5ezz3w?e=dM7Dq6) |
+    | nuScenes | [B10/N5](../tools/cfgs/nuscenes_models/sparseunet_clip_base10_caption.yaml) |  49.0 / 75.8 / 36.3 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EW3r1oYwaERDk7BE2v9mp4MB0JOBkYMPKWYIWNkbl_EWGQ?e=cHb1g0) |
+    | ScanNet200 | [B170/N30](../tools/cfgs/scannet200_models/spconv_clip_base170_caption.yaml) | 16.9 / 21.6 / 13.9 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EY6yrNOeKSJEo-526WrcOesBZREtteoZ1KBIGPI26Wq2UQ?e=se8JLj) |
+    | ScanNet200 | [B150/N50](../tools/cfgs/scannet200_models/spconv_clip_base150_caption.yaml) | 14.6 / 22.4 / 10.8 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EWdyFjCzvn9Gi0FN7VQAJl8BKcQAQYs61Lbh2V27ZT6h0g?e=FzOpex) |
 
 # Citation
 ```
