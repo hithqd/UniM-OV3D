@@ -141,6 +141,8 @@ pip install nuscenes-devkit==1.0.5
     | ScanNet | B13/N4 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b13n4_scannet.pth) |
     | ScanNet | B10/N7 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b10n7_scannet.pth) |
     | ScanNet | B8/N9 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b8n9_scannet.pth) |
+    | S3DIS | B8/N4 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b8n4_s3dis.pth) |
+    | S3DIS | B6/N6 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b6n6_s3dis.pth) |
 
 # Citation
 ```
