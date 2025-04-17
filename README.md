@@ -98,7 +98,6 @@ The dataset configs are located within [tools/cfgs/dataset_configs](../tools/cfg
 * Please download the official [NuScenes 3D object detection dataset](https://www.nuscenes.org/download) and organize the downloaded files as follows: 
 * Additionally, please download the caption data [here](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/jhyang13_connect_hku_hk/Eh9qCTiV0VBEuJDLRai7_MUBGOepuHr3F9y-VVnIjhyELw?e=a4yXcB).
 ```
-PLA
 ├── data
 │   ├── nuscenes
 │   │   │── text_embed
@@ -120,7 +119,7 @@ pip install nuscenes-devkit==1.0.5
 # Model Zoo
 #### 3D Semantic Segmentation
 
-- Semantic segmentation on four dataset
+- Semantic segmentation on four datasets
 
     | Dataset | Partition | Path |
     |:---:|:---:|:---:|
