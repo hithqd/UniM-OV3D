@@ -120,6 +120,8 @@ pip install nuscenes-devkit==1.0.5
 # Model Zoo
 #### 3D Semantic Segmentation
 
+- Base-annotated setup
+
     | Dataset | Partition | Path |
     |:---:|:---:|:---:|
     | ScanNet | [B15/N4] | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b15n4.pth) |
@@ -132,8 +134,6 @@ pip install nuscenes-devkit==1.0.5
     | nuScenes | [B12/N3](../tools/cfgs/nuscenes_models/sparseunet_clip_base12_caption.yaml) |  [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/Ef7cm0XNBjZHupbpYvg9ItkBC8WaB25Ar0kiOTdg5ezz3w?e=dM7Dq6) |
     | nuScenes | [B10/N5](../tools/cfgs/nuscenes_models/sparseunet_clip_base10_caption.yaml) |  [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EW3r1oYwaERDk7BE2v9mp4MB0JOBkYMPKWYIWNkbl_EWGQ?e=cHb1g0) |
     
-- Base-annotated setup
-
     | Dataset | Partition | hIoU / mIoU(B) / mIoU(N) | Path |
     |:---:|:---:|:---:|:---:|
     | ScanNet | [B15/N4](../tools/cfgs/scannet_models/spconv_clip_base15_caption.yaml) | 69.4 / 68.2 / 70.7 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EWGG39VOw2NOvKdfUjWnh8UBPgU6zBilXLaKGMgO2asBYw?e=g7QCpC) |
