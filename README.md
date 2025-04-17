@@ -120,7 +120,7 @@ pip install nuscenes-devkit==1.0.5
 # Model Zoo
 #### 3D Semantic Segmentation
 
-- Base-annotated setup
+- Semantic segmentation on four dataset
 
     | Dataset | Partition | Path |
     |:---:|:---:|:---:|
