@@ -133,6 +133,14 @@ pip install nuscenes-devkit==1.0.5
     | nuScenes | B12/N3 |  [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b12n3_nuScenes.pth) |
     | nuScenes | B10/N5 |  [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b10n5_nuScenes.pth) |
     
+#### 3D Instance Segmentation
+- Instance segmentation on four datasets
+  
+    | Dataset | Partition | hAP<sub>50</sub> / mAP<sub>50</sub>(B) / mAP<sub>50</sub>(N) | Path |
+    |:---:|:---:|:---:|:---:|
+    | ScanNet | [B13/N4](../tools/cfgs/scannet_models/inst/softgroup_clip_base13_caption.yaml) | 58.2 / 59.2 / 57.2 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/ETXofs-cwntBiitiBssSO_kBCKvmazufDxST2p9X7Mo56Q?e=zt8vSf) |
+    | ScanNet | [B10/N7](../tools/cfgs/scannet_models/inst/softgroup_clip_base10_caption.yaml) | 40.6 / 53.9 / 32.5 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/Eak_DMQR07xCkB9g52Wqbn0B-j_VNHTQppom_r5K4CCvxQ?e=GpfG9T) |
+    | ScanNet | [B8/N9](../tools/cfgs/scannet_models/inst/softgroup_clip_base8_caption.yaml) | 46.8 / 62.5 / 37.4 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EaNGtC64C5RMugxp8zISDK0BTOl7f7UZIcTR_lh1bsIEAQ?e=gbfaXz) |
 
 # Citation
 ```
