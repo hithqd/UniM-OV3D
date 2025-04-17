@@ -1,0 +1,161 @@
+CLASS_NAMES: ['wall', 'chair', 'floor', 'table', 'door', 'couch', 'cabinet', 'shelf', 'desk', 'office chair',
+              'bed', 'pillow', 'sink', 'picture', 'window', 'toilet', 'bookshelf', 'monitor', 'curtain', 'book',
+              'armchair', 'coffee table', 'box', 'refrigerator', 'lamp', 'kitchen cabinet', 'towel', 'clothes', 'tv', 'nightstand',
+              'counter', 'dresser', 'stool', 'cushion', 'plant', 'ceiling', 'bathtub', 'end table', 'dining table', 'keyboard',
+              'bag', 'backpack', 'toilet paper', 'printer', 'tv stand', 'whiteboard', 'blanket', 'shower curtain', 'trash can', 'closet',
+              'stairs', 'microwave', 'stove', 'shoe', 'computer tower', 'bottle', 'bin', 'ottoman', 'bench', 'board',
+              'washing machine', 'mirror', 'copier', 'basket', 'sofa chair', 'file cabinet', 'fan', 'laptop', 'shower', 'paper',
+              'person', 'paper towel dispenser', 'oven', 'blinds', 'rack', 'plate', 'blackboard', 'piano', 'suitcase', 'rail',
+              'radiator', 'recycling bin', 'container', 'wardrobe', 'soap dispenser', 'telephone', 'bucket', 'clock', 'stand', 'light',
+              'laundry basket', 'pipe', 'clothes dryer', 'guitar', 'toilet paper holder', 'seat', 'speaker', 'column', 'bicycle', 'ladder',
+              'bathroom stall', 'shower wall', 'cup', 'jacket', 'storage bin', 'coffee maker', 'dishwasher', 'paper towel roll', 'machine', 'mat',
+              'windowsill', 'bar', 'toaster', 'bulletin board', 'ironing board', 'fireplace', 'soap dish', 'kitchen counter', 'doorframe', 'toilet paper dispenser',
+              'mini fridge', 'fire extinguisher', 'ball', 'hat', 'shower curtain rod', 'water cooler', 'paper cutter', 'tray', 'shower door', 'pillar',
+              'ledge', 'toaster oven', 'mouse', 'toilet seat cover dispenser', 'furniture', 'cart', 'storage container', 'scale', 'tissue box', 'light switch',
+              'crate', 'power outlet', 'decoration', 'sign', 'projector', 'closet door', 'vacuum cleaner', 'candle', 'plunger', 'stuffed animal',
+              'headphones', 'dish rack', 'broom', 'guitar case', 'range hood', 'dustpan', 'hair dryer', 'water bottle', 'handicap bar', 'purse',
+              'vent', 'shower floor', 'water pitcher', 'mailbox', 'bowl', 'paper bag', 'alarm clock', 'music stand', 'projector screen', 'divider',
+              'laundry detergent', 'bathroom counter', 'object', 'bathroom vanity', 'closet wall', 'laundry hamper', 'bathroom stall door', 'ceiling light', 'trash bin', 'dumbbell',
+              'stair rail', 'tube', 'bathroom cabinet', 'cd case', 'closet rod', 'coffee kettle', 'structure', 'shower head', 'keyboard piano', 'case of water bottles',
+              'coat rack', 'storage organizer', 'folded chair', 'fire alarm', 'power strip', 'calendar', 'poster', 'potted plant', 'luggage', 'mattress']
+
+DATA_CONFIG:
+  _BASE_CONFIG_: cfgs/dataset_configs/scannet200_dataset.yaml
+  ignore_class_idx: []
+  base_class_idx: [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17, 18, 19, 20, 22,
+                   23, 24, 26, 28, 29, 31, 32, 33, 34, 35, 36, 38, 39, 42, 44, 45, 46,
+                   47, 48, 49, 50, 52, 54, 55, 57, 58, 59, 61, 62, 63, 65, 66, 67, 68,
+                   70, 71, 72, 74, 75, 76, 77, 78, 79, 82, 83, 85, 87, 90, 92, 93, 94,
+                   95, 96, 97, 98, 99, 101, 103, 106, 107, 109, 110, 111, 112, 113, 114,
+                   116, 117, 118, 119, 121, 122, 124, 125, 126, 127, 128, 129, 130, 131,
+                   132, 133, 134, 136, 137, 138, 140, 141, 143, 144, 145, 146, 147, 150,
+                   153, 155, 156, 157, 158, 159, 160, 161, 163, 164, 166, 167, 168, 169,
+                   170, 171, 172, 174, 175, 176, 179, 181, 182, 183, 184, 185, 186, 187,
+                   188, 189, 191, 192, 193, 194, 197, 198, 199] # 150
+  novel_class_idx: [5, 14, 16, 21, 25, 27, 30, 37, 40, 41, 43, 51, 53, 56, 60, 64, 69, 73,
+                    80, 81, 84, 86, 88, 89, 91, 100, 102, 104, 105, 108, 115, 120, 123, 135,
+                    139, 142, 148, 149, 151, 152, 154, 162, 165, 173, 177, 178, 180, 190, 195,
+                    196] # 50
+  trainonly_class_idx: [98, 136, 147, 153, 159, 166, 167, 183, 186, 191, 198]
+
+  CAPTION_INFO:
+    KEY: [SCENE, VIEW, ENTITY]
+  
+    SCENE:
+      ENABLED: False
+      CAPTION_PATH: text_embed/caption.json
+      GATHER_CAPTION: True
+
+    VIEW:
+      ENABLED: True
+      CAPTION_PATH: text_embed/caption_kosmos_and_detic-template_125k_iou0.2.json
+      IMAGE_CORR_PATH: scannet_caption_idx_kosmos_and_detic-template_125k_iou0.2.pkl
+      SELECT: ratio
+      NUM: 1
+      RATIO: 0.2
+      SAMPLE: 1
+      GATHER_CAPTION: False
+
+    ENTITY:
+      ENABLED: False
+      CAPTION_PATH: text_embed/caption_2d_intersect_v3.json
+      IMAGE_CORR_PATH: scannetv2_matching_idx_intersect_v3
+      SELECT: ratio
+      NUM: 1
+      RATIO: 1.0
+      GATHER_CAPTION: True
+    
+    CAPTION_CORR_PATH_IN_ONE_FILE: True
+
+MODEL:
+  NAME: SparseUNetTextSeg
+  REMAP_FROM_3DLANG: False
+  REMAP_FROM_NOADAPTER: False
+
+  VFE:
+    NAME: IndoorVFE
+    USE_XYZ: True
+
+  BACKBONE_3D:
+    NAME: SparseUNetIndoor
+    IN_CHANNEL: 6
+    MID_CHANNEL: 32
+    BLOCK_RESIDUAL: True
+    BLOCK_REPS: 2
+    NUM_BLOCKS: 7
+    CUSTOM_SP1X1: True
+
+  ADAPTER:
+    NAME: VLAdapter
+    EVAL_ONLY: False
+    NUM_ADAPTER_LAYERS: 2
+    TEXT_DIM: -1
+    LAST_NORM: True
+
+  BINARY_HEAD:
+    NAME: BinaryHead
+    DETACH: True
+    THRESH: 0.5
+    CUSTOM_SP1X1: True
+    HOOK_FEATURE_LIST: ['unet.blocks.block1', 'unet.u.blocks.block1',
+                        'unet.u.u.blocks.block1', 'unet.u.u.u.blocks.block1',
+                        'unet.u.u.u.u.blocks.block1', 'unet.u.u.u.u.u.blocks.block1',
+                        'unet.u.u.u.u.u.u.blocks.block1' ]
+
+  TASK_HEAD:
+    NAME: TextSegHead
+    FEAT_NORM: False
+    CORRECT_SEG_PRED_BINARY: True
+
+    TEXT_EMBED:
+      NAME: CLIP
+      NORM: True
+      PATH: text_embed/scannet200_clip-ViT-B16_id.pth
+
+    LOGIT_SCALE:
+      value: 1.0
+      learnable: False
+    LOSS_WEIGHT: 1.0
+  
+  CAPTION_HEAD:
+    NAME: CaptionHead
+    POOLING_TYPE: avg
+    FEAT_NORM: True
+    LOGIT_SCALE:
+      value: 100.0
+      learnable: True
+    CUDA_ENABLED: True
+    POOL_OBJ: score
+    LOSS_FUNC: NLL_NoReduce
+    LOSS_WEIGHT:
+      SCENE: 0.1
+      VIEW: 0.5
+      ENTITY: 0.1
+    NOVEL_GRAD_ONLY: True
+
+TEXT_ENCODER:
+  NAME: CLIP
+  BACKBONE: ViT-B/16  # ['RN50', 'RN101', 'RN50x4', 'RN50x16', 'RN50x64', 'ViT-B/32', 'ViT-B/16', 'ViT-L/14']
+  TEMPLATE: identity
+  EXTRACT_EMBED: False  # Online extract text embeding from class or not
+
+OPTIMIZATION:
+  BATCH_SIZE_PER_GPU: 4
+  NUM_EPOCHS: 128
+  LR: 0.004  # 4e-3
+  SCHEDULER: cos_after_step
+  OPTIMIZER: adamw
+  WEIGHT_DECAY: 0.0001
+  MOMENTUM: 0.9
+  STEP_EPOCH: 50
+  MULTIPLIER: 0.1
+  CLIP_GRAD: False
+  PCT_START: 0.4
+  DIV_FACTOR: 2
+  MOMS: [0.95, 0.85]
+  LR_CLIP: 0.000001
+
+OTHERS:
+  PRINT_FREQ: 20
+  SYNC_BN: False
+  USE_AMP: True
