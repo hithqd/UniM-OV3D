@@ -117,6 +117,23 @@ PLA
 pip install nuscenes-devkit==1.0.5
 ```
 
+# Model Zoo
+#### 3D Semantic Segmentation
+
+    | Dataset | Partition | Path |
+    |:---:|:---:|:---:|
+    | ScanNet | [B15/N4] | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b15n4.pth) |
+    | ScanNet | [B12/N7] | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b12n7.pth) |
+    | ScanNet | [B10/N9] | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b10n9.pth) |
+    | S3DIS | [B8/N4] | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b8n4_s3dis.pth) |
+    | S3DIS | [B6/N6] | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b6n6_s3dis.pth) |
+    | ScanNet200 | [B170/N30] | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EY6yrNOeKSJEo-526WrcOesBZREtteoZ1KBIGPI26Wq2UQ?e=se8JLj) |
+    | ScanNet200 | [B150/N50] | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EWdyFjCzvn9Gi0FN7VQAJl8BKcQAQYs61Lbh2V27ZT6h0g?e=FzOpex) |
+    | nuScenes | [B12/N3](../tools/cfgs/nuscenes_models/sparseunet_clip_base12_caption.yaml) |  [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/Ef7cm0XNBjZHupbpYvg9ItkBC8WaB25Ar0kiOTdg5ezz3w?e=dM7Dq6) |
+    | nuScenes | [B10/N5](../tools/cfgs/nuscenes_models/sparseunet_clip_base10_caption.yaml) |  [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EW3r1oYwaERDk7BE2v9mp4MB0JOBkYMPKWYIWNkbl_EWGQ?e=cHb1g0) |
+    
+
+
 # Citation
 ```
 @article{he2024unim,
