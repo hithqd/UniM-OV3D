@@ -144,26 +144,14 @@ pip install nuscenes-devkit==1.0.5
     | S3DIS | B8/N4 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b8n4_s3dis.pth) |
     | S3DIS | B6/N6 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b6n6_s3dis.pth) |
 
-#### Training
+# Training
 
 ```bash
 cd tools
 sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE} ${PY_ARGS}
 ```
 
-For instance,
-- train B15/N4 semantic segmentation on ScanNet:
-    ```bash
-    cd tools
-    sh scripts/dist_train.sh 8 --cfg_file cfgs/scannet_models/spconv_clip_base15_caption.yaml --extra_tag exp_tag
-    ```
-- train B13/N4 instance segmentation on ScanNet:
-    ```bash
-    cd tools
-    sh scripts/dist_train.sh 8 --cfg_file cfgs/scannet_models/inst/softgroup_clip_base13_caption.yaml --extra_tag exp_tag
-    ```
-
-#### Inference
+# Inference
 
 ```bash
 cd tools
