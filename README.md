@@ -138,9 +138,9 @@ pip install nuscenes-devkit==1.0.5
   
     | Dataset | Partition | Path |
     |:---:|:---:|:---:|
-    | ScanNet | B13/N4 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/ETXofs-cwntBiitiBssSO_kBCKvmazufDxST2p9X7Mo56Q?e=zt8vSf) |
-    | ScanNet | B10/N7 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/Eak_DMQR07xCkB9g52Wqbn0B-j_VNHTQppom_r5K4CCvxQ?e=GpfG9T) |
-    | ScanNet | B8/N9 | [ckpt](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/jhyang13_connect_hku_hk/EaNGtC64C5RMugxp8zISDK0BTOl7f7UZIcTR_lh1bsIEAQ?e=gbfaXz) |
+    | ScanNet | B13/N4 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b13n4_scannet.pth) |
+    | ScanNet | B10/N7 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b10n7_scannet.pth) |
+    | ScanNet | B8/N9 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b8n9_scannet.pth) |
 
 # Citation
 ```
