@@ -134,7 +134,7 @@ pip install nuscenes-devkit==1.0.5
     | nuScenes | B10/N5 |  [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/semantic_b10n5_nuScenes.pth) |
     
 #### 3D Instance Segmentation
-- Instance segmentation on four datasets
+- Instance segmentation on two datasets
   
     | Dataset | Partition | Path |
     |:---:|:---:|:---:|
@@ -143,6 +143,32 @@ pip install nuscenes-devkit==1.0.5
     | ScanNet | B8/N9 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b8n9_scannet.pth) |
     | S3DIS | B8/N4 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b8n4_s3dis.pth) |
     | S3DIS | B6/N6 | [ckpt](https://huggingface.co/QingdongHe/UniM-OV3D/blob/main/instance_b6n6_s3dis.pth) |
+
+#### Training
+
+```bash
+cd tools
+sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE} ${PY_ARGS}
+```
+
+For instance,
+- train B15/N4 semantic segmentation on ScanNet:
+    ```bash
+    cd tools
+    sh scripts/dist_train.sh 8 --cfg_file cfgs/scannet_models/spconv_clip_base15_caption.yaml --extra_tag exp_tag
+    ```
+- train B13/N4 instance segmentation on ScanNet:
+    ```bash
+    cd tools
+    sh scripts/dist_train.sh 8 --cfg_file cfgs/scannet_models/inst/softgroup_clip_base13_caption.yaml --extra_tag exp_tag
+    ```
+
+#### Inference
+
+```bash
+cd tools
+sh scripts/dist_test.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE} --ckpt ${CKPT_PATH}
+```
 
 # Citation
 ```
