@@ -16,6 +16,14 @@
 # TODO
 * Code is coming soon.
 
+#### Requirements
+All the codes are tested in the following environment:
+- Python 3.7+
+- PyTorch 1.8
+- CUDA 11.1
+- [spconv v2.x](https://github.com/traveller59/spconv)
+
+
 # Citation
 ```
 @article{he2024unim,
