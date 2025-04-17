@@ -26,9 +26,9 @@ All the codes are tested in the following environment:
 #### Install dependent libraries
 a. Clone this repository.
 ```bash
-git clone https://github.com/CVMI-Lab/PLA.git
+git clone https://github.com/hithqd/UniM-OV3D.git
 git fetch -all
-git checkout regionplc
+git checkout main
 ```
 
 b. Install the dependent libraries as follows:
